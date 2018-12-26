@@ -1,0 +1,518 @@
+#include <iostream>
+#include <iomanip>
+#include <locale.h>
+#include <vector>
+#include <string>
+using namespace std;
+  
+// Абстрактные базовые классы всех возможных видов
+class Element
+{
+public:
+	virtual void setPow(int) = 0;
+	virtual void setValue(string) = 0;
+	virtual void setNumber(int) = 0;
+
+	virtual int getNumber() = 0;
+	virtual int getPow() = 0;
+	virtual string getValue() = 0;
+
+	virtual void info() = 0;
+	virtual void init() = 0;
+	virtual ~Element() {}
+};
+
+// Классы всех видов
+class BaseElement: public Element
+{
+private:
+	int pow;
+	int number;
+	string value;
+
+public:
+	void setPow(int d) {
+		pow = d;
+	}
+	void setValue(string d) {
+		value = d;
+	}
+	void setNumber(int d) {
+		number = d;
+	}
+	int getNumber() {
+		return this->number;
+	}
+	int getPow() {
+		return this->pow;
+	}
+	string getValue() {
+		return this->value;
+	}
+	void info() {
+		
+		// число
+		int n = this->number;
+		if(n < 0) n = n * (-1); // модуль
+		
+		if(n != 0) {
+			
+
+			if(value != "") {
+				// переменная
+				if(n > 1) {
+					cout << number;
+				}
+				cout << value;
+			} else {
+				// число
+				if(n > 0) {
+					cout << number;
+				}
+			}
+
+			if(pow > 1) {
+				// степень
+				cout << "^" << pow;
+			}
+		}
+	}
+
+	void init() {
+		cout << "------" << endl;
+
+		string val = "";
+		int pow = 0;
+		int num = 0;
+		
+		// число
+		cout << "Введите число " << endl;
+		cin >> num;
+		this->setNumber(num);
+
+		if(num == 0) {
+
+			this->setPow(1);
+			this->setValue("");
+
+		} else {
+
+			cout << "Введите переменную(к примеру, x) или 0 " << endl;
+			cin >> val;
+			this->setValue(val);
+
+			if(val != "0") {
+
+				// переменная
+				cout << "Введите степень " << endl;
+				cin >> pow;
+
+				if(pow == 0) {
+				
+					// нулевая степень = 1
+					this->setValue("");
+					this->setPow(1);
+					this->setNumber(1);
+				} else {
+					this->setPow(pow);
+
+				}
+
+			} else {
+			
+				this->setValue("");
+				this->setPow(1);
+
+			}
+		}
+
+		cout << "------" << endl;
+
+		return;
+	}
+};
+  
+
+// Класс, содержащий все элементы многочлена
+class Polynom 
+{
+private:
+	int number;
+	string name;
+	int id;
+public:    
+	Polynom() {
+		this->id = 1;
+	}
+	~Polynom() {
+		int i;
+		for(i=0; i<elements.size(); ++i)  delete elements[i]; 
+	}
+
+	void setNumber(int d) {
+		number = d;
+	}
+	void setName(string d) {
+		name = d;
+	}
+
+	int getNumber() {
+		return this->number;
+	}
+	string getName() {
+		return this->name;
+	}
+	/*
+	// Вывод многочлена на экран
+	void info() {   
+		int i;
+		if(number > 0) {
+
+			for(i=0; i<elements.size(); ++i) {
+				if(i > 0) { 
+					// не первый элемент
+					int number = elements[i]->getNumber();
+
+					if(number > 0) cout << " + ";
+						else cout << " - ";
+				}
+				elements[i]->info();
+
+			}
+
+		} else {
+			
+			cout << "Многочлен не содержит чисел" << endl;
+		}
+		cout << endl;
+
+		return;
+	}
+	*/
+	//Polynom operator=(Polynom * t) {
+		//return *(this->plus(t));
+	//}
+	Polynom operator+(Polynom *t) {
+		return *this;
+	}
+
+	// Перегрузка сложения
+	/*Polynom* operator + (Polynom * t) {
+		Polynom* copyPolynom = this; // копия
+		return copyPolynom->plus(t);
+	}*/
+	/*
+	// Перегрузка Вывод многочлена
+	friend ostream &operator << (ostream &s, Polynom * c) {
+		c->info();
+
+		return s;
+	}
+	// Перегрузка Ввод многочлена
+	friend istream &operator >> (istream &s, Polynom * c) {
+		c->init();
+		c->initElements();
+		return s;
+	}
+	// Ввод многочлена
+	void init() {
+		
+		int number = 0;
+		cout << "Количество чисел " << endl;
+		cin >> number;
+		this->setNumber(number);
+
+		return;
+	}
+	// Ввод элементов
+	void initElements() {
+
+		if(this->number > 0) {
+			for(int i = 0; i < this->number; i++) {
+				BaseElement * element = new BaseElement;
+				element->init();
+				this->elements.push_back( element);
+			}
+		} else {
+			cout << "Многочлен не содержит чисел" << endl;
+		}
+
+		return;
+	}
+
+	// Сложение многочленов
+	Polynom* plus(Polynom *t) {
+
+		Polynom* copyElements = this; // копия текущего
+		Polynom* allElements = new Polynom;
+		Polynom* sumOfPolynom = new Polynom; // пустой многочлен
+
+
+		int i = 0, 
+			j = 0;
+
+		
+		for(j=0; j<copyElements->elements.size(); ++j) {
+			// Числа из первого многочлена
+
+			allElements->elements.push_back(copyElements->elements[j]);
+
+		}
+		for(j=0; j<t->elements.size(); ++j) {
+			// Числа из второго многочлена
+
+			allElements->elements.push_back(t->elements[j]);
+
+		}
+
+		int * wayArr = new int[allElements->elements.size()];
+		int curWay = 0;
+
+		for(i=0; i<allElements->elements.size(); ++i) {
+			// Разбираем все элементы 2х многочленов
+
+			bool notViewed = true;
+			for (int is = 0; is < curWay+1; is++)
+			{
+				if (wayArr[is] == i) {
+					notViewed = false;
+				}
+			}
+
+			wayArr[curWay] = i;
+			curWay++;
+
+			
+
+
+			if (notViewed) {
+
+				int number = allElements->elements[i]->getNumber();
+				int pow = allElements->elements[i]->getPow();
+				string value = allElements->elements[i]->getValue();
+				
+				// Элемент
+				BaseElement * element = new BaseElement;
+				element->setNumber(number);
+				element->setValue(value);
+				element->setPow(pow);	
+
+				bool isFound = false;
+
+
+				for(j=0; j < allElements->elements.size(); ++j) {
+
+					bool notViewed2 = true;
+					for (int is = 0; is < curWay + 1; is++)
+					{
+						if (wayArr[is] == j) {
+							notViewed2 = false;
+						}
+					}
+					if (notViewed2) {
+
+						if(i != j) {
+
+							int numberT = allElements->elements[j]->getNumber();
+							int powT = allElements->elements[j]->getPow();
+							string valueT = allElements->elements[j]->getValue();
+
+							if(pow == powT && value == valueT) {
+								number += numberT;
+								isFound = true;
+
+								wayArr[curWay] = j;
+								curWay++;
+							}
+
+						}
+					}
+
+				}
+
+				element->setNumber(number);
+				sumOfPolynom->elements.push_back(element);
+			}
+
+		}
+
+		int size = sumOfPolynom->elements.size();
+		sumOfPolynom->setNumber(size);
+		sumOfPolynom->setName("plus");
+
+		return sumOfPolynom;
+
+	};
+
+	// Перемножение многочленов
+	Polynom* prod(Polynom *t) {
+
+		Polynom* allElements = this; // копия текущего
+		Polynom* prodOfPolynom = new Polynom; // пустой многочлен
+
+		int i = 0, 
+			j = 0;
+
+
+		for(i=0; i < allElements->elements.size(); ++i) {
+			// Разбираем все элементы 1 многочлена
+
+			int number = allElements->elements[i]->getNumber();
+			int pow = allElements->elements[i]->getPow();
+			string value = allElements->elements[i]->getValue();
+
+			for(j=0; j<t->elements.size(); ++j) {
+
+
+				int numberT = t->elements[j]->getNumber();
+				int powT = t->elements[j]->getPow();
+				string valueT = t->elements[j]->getValue();
+				
+
+				bool oneHavePow = false;
+				bool twoHavePow = false;
+				
+				if(value != "") oneHavePow = true;
+				if(valueT != "") twoHavePow = true;
+
+				
+				int numberProd = number * numberT;
+				int powProd = pow;
+				string valueProd = value;
+
+				if(oneHavePow) {
+					if(twoHavePow) {
+						if(value == valueT) {
+							powProd = pow + powT;
+						} else {
+
+							// произведение степеней для разных переменных
+
+						}
+					}
+				} else if(twoHavePow) {
+					powProd = powT;
+					valueProd = valueT;
+					
+				}
+				
+				BaseElement * element = new BaseElement;
+				element->setNumber(numberProd);
+				element->setValue(valueProd);
+				element->setPow(powProd);
+
+				prodOfPolynom->elements.push_back(element);
+
+
+			}
+
+
+		}
+
+		int size = prodOfPolynom->elements.size();
+		prodOfPolynom->setNumber(size);
+		prodOfPolynom->setName("prod");
+
+		return prodOfPolynom;
+
+	};
+	*/
+	// Хранение элементов многочлена
+	vector<Element*> elements;  
+};
+
+
+// Абстрактная фабрика для производства многочленов
+class AbstractFactory
+{
+  public:    
+    virtual Element* createElement() = 0;
+	virtual Polynom* createPolynom() = 0;
+	virtual Polynom polynom() = 0;
+    virtual ~AbstractFactory() {}
+};
+  
+  
+// Фабрика для создания определенных многочленов
+class PolynomFactory: public AbstractFactory
+{
+  public:    
+    Element* createElement() {
+		BaseElement * element = new BaseElement;
+		element->setPow(2);
+		return element; 
+    }
+    Polynom* createPolynom() {   
+      Polynom* p = new Polynom;
+      return p;
+    } 
+    Polynom polynom() {   
+      Polynom p = Polynom();
+      return p;
+    } 
+};
+
+  
+  
+int main()
+{        
+	setlocale(LC_ALL,"Russian");
+
+    PolynomFactory factory;
+     
+    Polynom ra = factory.polynom();
+	ra = ra + ra;
+
+	
+	/*
+    Polynom rhz = factory.polynom();
+	cin >> ra;
+	
+	ra = *ra + *rhz;
+
+
+	cout << endl;
+	cout << endl;
+
+    cout << "Первый многочлен:" << endl;
+    ra->info();
+
+	cout << endl;
+	cout << endl;
+
+    Polynom * rb = factory.createPolynom();
+
+	cin >> rb;
+
+	cout << endl;
+	cout << endl;
+
+    cout << "Второй многочлен:" << endl;
+	cout << rb;
+	//rb->info();
+
+	cout << endl;
+	cout << endl;
+
+	Polynom * rz = ra->plus(rb);
+    cout << "Сумма многочленов:" << endl;
+	cout << rz;
+
+	cout << endl;
+	cout << endl;
+	
+    cout << "Первый многочлен:" << endl;
+	cout << ra;
+    cout << "Второй многочлен:" << endl;
+	cout << rb;
+
+	Polynom * rg = ra->prod(rb);
+    cout << "Произведение многочленов:" << endl;
+	cout << rg;
+	*/
+	cout << endl;
+	cout << endl;
+
+
+	system("pause");
+}

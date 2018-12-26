@@ -1,0 +1,122 @@
+﻿Построение начато 24.12.2018 21:34:43.
+     1>Проект "D:\dev\c++\course_2\Lab_5_12\Lab_5_12.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\Lab_5_12.unsuccessfulbuild".
+       ClCompile:
+         D:\Programs\Microsoft Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt app\Controller.cpp app\Elements.cpp app\Polynom.cpp main.cpp
+         main.cpp
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.h(16): error C2259: Elements: невозможно создать экземпляр абстрактного класса
+                 из-за следующих членов:
+                 void Controller::init(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(14): см. объявление "Controller::init"
+                 void Controller::close(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(15): см. объявление "Controller::close"
+     1>d:\dev\c++\course_2\lab_5_12\main.cpp(35): error C2259: Polynom: невозможно создать экземпляр абстрактного класса
+                 из-за следующих членов:
+                 void Controller::init(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(14): см. объявление "Controller::init"
+                 void Controller::close(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(15): см. объявление "Controller::close"
+                 void Controller::set(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(17): см. объявление "Controller::set"
+                 void Controller::setCoef(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(20): см. объявление "Controller::setCoef"
+                 int Controller::getCoef(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(25): см. объявление "Controller::getCoef"
+                 void Controller::create(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(27): см. объявление "Controller::create"
+                 void Controller::update(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(28): см. объявление "Controller::update"
+                 void Controller::print(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(29): см. объявление "Controller::print"
+                 int Controller::getCount(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(31): см. объявление "Controller::getCount"
+         Polynom.cpp
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.h(16): error C2259: Elements: невозможно создать экземпляр абстрактного класса
+                 из-за следующих членов:
+                 void Controller::init(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(14): см. объявление "Controller::init"
+                 void Controller::close(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(15): см. объявление "Controller::close"
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(63): error C2259: Polynom: невозможно создать экземпляр абстрактного класса
+                 из-за следующих членов:
+                 void Controller::init(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(14): см. объявление "Controller::init"
+                 void Controller::close(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(15): см. объявление "Controller::close"
+                 void Controller::set(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(17): см. объявление "Controller::set"
+                 void Controller::setCoef(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(20): см. объявление "Controller::setCoef"
+                 int Controller::getCoef(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(25): см. объявление "Controller::getCoef"
+                 void Controller::create(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(27): см. объявление "Controller::create"
+                 void Controller::update(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(28): см. объявление "Controller::update"
+                 void Controller::print(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(29): см. объявление "Controller::print"
+                 int Controller::getCount(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(31): см. объявление "Controller::getCount"
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(65): error C2259: Polynom: невозможно создать экземпляр абстрактного класса
+                 из-за следующих членов:
+                 void Controller::init(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(14): см. объявление "Controller::init"
+                 void Controller::close(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(15): см. объявление "Controller::close"
+                 void Controller::set(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(17): см. объявление "Controller::set"
+                 void Controller::setCoef(int): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(20): см. объявление "Controller::setCoef"
+                 int Controller::getCoef(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(25): см. объявление "Controller::getCoef"
+                 void Controller::create(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(27): см. объявление "Controller::create"
+                 void Controller::update(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(28): см. объявление "Controller::update"
+                 void Controller::print(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(29): см. объявление "Controller::print"
+                 int Controller::getCount(void): абстрактный
+                 d:\dev\c++\course_2\lab_5_12\app\controller.h(31): см. объявление "Controller::getCount"
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(124): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(131): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(132): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(133): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(174): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(175): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(176): error C2653: Element: не является именем класса или пространства имен
+     1>d:\dev\c++\course_2\lab_5_12\app\polynom.cpp(196): error C2653: Element: не является именем класса или пространства имен
+         Elements.cpp
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(27): error C2039: modelElement: не является членом "Struct"
+                 d:\dev\c++\course_2\lab_5_12\model\struct.h(8): см. объявление "Struct"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(27): error C2065: modelElement: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(27): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "newElement"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(27): error C2065: newElement: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(28): error C2065: newElement: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(49): error C2039: modelElement: не является членом "Struct"
+                 d:\dev\c++\course_2\lab_5_12\model\struct.h(8): см. объявление "Struct"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(49): error C2143: синтаксическая ошибка: отсутствие ";" перед "Elements::get"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(49): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(50): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(50): error C2556: int Elements::get(int): перегруженная функция отличается от "Struct::model Elements::get(int)" только возвращаемым типом
+                 d:\dev\c++\course_2\lab_5_12\app\elements.h(30): см. объявление "Elements::get"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(50): error C2371: Elements::get: переопределение; различные базовые типы
+                 d:\dev\c++\course_2\lab_5_12\app\elements.h(30): см. объявление "Elements::get"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(88): error C2039: modelElement: не является членом "Struct"
+                 d:\dev\c++\course_2\lab_5_12\model\struct.h(8): см. объявление "Struct"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(88): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "f"
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(88): error C2065: f: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(90): error C2065: f: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(94): error C2065: f: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(94): error C2228: выражение слева от ".coef" должно представлять класс, структуру или объединение
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(95): error C2065: f: необъявленный идентификатор
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(95): error C2228: выражение слева от ".pow" должно представлять класс, структуру или объединение
+     1>d:\dev\c++\course_2\lab_5_12\app\elements.cpp(132): error C2653: Element: не является именем класса или пространства имен
+         Controller.cpp
+     1>c1xx : fatal error C1083: Не удается открыть файл источник: app\Controller.cpp: No such file or directory
+         Создание кода...
+     1>Построение проекта "D:\dev\c++\course_2\Lab_5_12\Lab_5_12.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:01.80

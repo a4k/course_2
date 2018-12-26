@@ -1,0 +1,15 @@
+﻿Построение начато 29.10.2018 22:56:15.
+     1>Проект "D:\Институт\Программы\Лабораторные Анисимов\course_2\course_2\course_2.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\course_2.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\course_2.exe.embed.manifest.res" Debug\course_2_manifest.rc 
+       Link:
+         D:\Programs\Microsoft Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Институт\Программы\Лабораторные Анисимов\course_2\Debug\course_2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\course_2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Институт\Программы\Лабораторные Анисимов\course_2\Debug\course_2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Институт\Программы\Лабораторные Анисимов\course_2\Debug\course_2.lib" /MACHINE:X86 Debug\course_2.exe.embed.manifest.res
+     1>LINK : error LNK2001: неразрешенный внешний символ "_mainCRTStartup"
+     1>D:\Институт\Программы\Лабораторные Анисимов\course_2\Debug\course_2.exe : fatal error LNK1120: 1 неразрешенных внешних элементов
+     1>Построение проекта "D:\Институт\Программы\Лабораторные Анисимов\course_2\course_2\course_2.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:00.98
