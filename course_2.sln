@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab_5_12", "Lab_5_12\Lab_5_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab_512_clone", "Lab_512_clone\Lab_512_clone.vcxproj", "{EA12321E-E252-47EA-98FE-EF450630A041}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sea_battle", "sea_battle\sea_battle.vcxproj", "{89D0064E-C727-40FC-A7C8-7D9457FB1160}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -37,6 +39,10 @@ Global
 		{EA12321E-E252-47EA-98FE-EF450630A041}.Debug|Win32.Build.0 = Debug|Win32
 		{EA12321E-E252-47EA-98FE-EF450630A041}.Release|Win32.ActiveCfg = Release|Win32
 		{EA12321E-E252-47EA-98FE-EF450630A041}.Release|Win32.Build.0 = Release|Win32
+		{89D0064E-C727-40FC-A7C8-7D9457FB1160}.Debug|Win32.ActiveCfg = Debug|Win32
+		{89D0064E-C727-40FC-A7C8-7D9457FB1160}.Debug|Win32.Build.0 = Debug|Win32
+		{89D0064E-C727-40FC-A7C8-7D9457FB1160}.Release|Win32.ActiveCfg = Release|Win32
+		{89D0064E-C727-40FC-A7C8-7D9457FB1160}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,100 @@
+﻿Построение начато 08.01.2019 21:10:58.
+     1>Проект "D:\dev\c++\course_2\sea_battle\sea_battle.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\sea_battle.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         D:\Programs\Microsoft Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Board.cpp Cell.cpp Config.cpp Game.cpp Main.cpp Player.cpp Ship.cpp
+         Board.cpp
+     1>d:\dev\c++\course_2\sea_battle\board.h(10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(74): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(134): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(135): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(149): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(152): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(170): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(246): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(254): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(255): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(271): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(272): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(338): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(342): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(363): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\board.cpp(367): warning C4018: <: несоответствие типов со знаком и без знака
+         Создание кода...
+         Компиляция...
+         Ship.cpp
+     1>d:\dev\c++\course_2\sea_battle\ship.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.cpp(38): warning C4018: <: несоответствие типов со знаком и без знака
+         Player.cpp
+     1>d:\dev\c++\course_2\sea_battle\player.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.cpp(133): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\dev\c++\course_2\sea_battle\player.cpp(188): warning C4018: <: несоответствие типов со знаком и без знака
+         Main.cpp
+     1>d:\dev\c++\course_2\sea_battle\main.cpp(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\game.h(4): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\game.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\main.cpp(3): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\main.cpp(9): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         Game.cpp
+     1>d:\dev\c++\course_2\sea_battle\game.h(4): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\ship.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\board.h(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\player.h(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>d:\dev\c++\course_2\sea_battle\game.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+         Config.cpp
+         Cell.cpp
+     1>d:\dev\c++\course_2\sea_battle\cell.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+         Создание кода...
+     1>d:\dev\c++\course_2\sea_battle\player.cpp(52): warning C4715: Player::waitForCommand: значение возвращается не при всех путях выполнения
+     1>d:\dev\c++\course_2\sea_battle\player.cpp(68): warning C4715: Player::waitForCPU: значение возвращается не при всех путях выполнения
+       Link:
+         D:\Programs\Microsoft Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\dev\c++\course_2\Debug\sea_battle.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\sea_battle.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\dev\c++\course_2\Debug\sea_battle.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\dev\c++\course_2\Debug\sea_battle.lib" /MACHINE:X86 Debug\Board.obj
+         Debug\Cell.obj
+         Debug\Config.obj
+         Debug\Game.obj
+         Debug\Main.obj
+         Debug\Player.obj
+         Debug\Ship.obj
+         LINK : не найден или не выполнена сборка D:\dev\c++\course_2\Debug\sea_battle.exe при последней инкрементной компоновке; выполняется полная компоновка
+         sea_battle.vcxproj -> D:\dev\c++\course_2\Debug\sea_battle.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\dev\c++\course_2\Debug\sea_battle.exe;#1" /manifest Debug\sea_battle.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\sea_battle.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\sea_battle.lastbuildstate".
+     1>Построение проекта "D:\dev\c++\course_2\sea_battle\sea_battle.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:05.33
